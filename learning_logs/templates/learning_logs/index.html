@@ -1,9 +1,15 @@
 {% extends "learning_logs/base.html" %}
 
 {% block content %}
-<p>Learning Log helps you keep track of your learning, for any topic you're
-learning about.</p>
+
+    <div class="jumbottom" >
+    <h1 class="display-3">
+        Welcome New Word.
+    </h1>
+        <p class="lead">Maker your own Learning Log, and keep a list the
+            topics you're learning about. Whenever you learn something new
+            about a topic, make an entry summarizing what you're learned.</p>
+        <a class="lbtn btn-lg btn-primary" href="{% url 'users:register' %}"
+           role="button">注 册 &raquo;</a>
+    </div>
 {% endblock content %}
-
-
-
